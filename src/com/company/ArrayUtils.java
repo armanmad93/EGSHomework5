@@ -8,6 +8,9 @@ import java.util.Random;
 
 public class ArrayUtils {
 
+    private ArrayUtils() {
+    }
+
     /**
      * Create a method that sorts the int array elements by odd and even number such that
      * if first number is odd then second must be even number and so on for the next elements of the array.
