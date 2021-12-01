@@ -1,6 +1,5 @@
 package com.company;
 
-import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -223,9 +222,7 @@ public class ArrayUtils {
         int count = 0;
 
         // i am change elements from array , so i need clone
-        for (int i = 0; i < inputArray.length; i++) {
-            inputArrayClone[i] = inputArray[i];
-        }
+        System.arraycopy(inputArray, 0, inputArrayClone, 0, inputArray.length);
 
         for (int i = 0; i < inputArrayClone.length; i++) {
             for (int j = i + 1; j < inputArrayClone.length; j++) {
